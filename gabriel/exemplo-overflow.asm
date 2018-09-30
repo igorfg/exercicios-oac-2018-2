@@ -8,6 +8,12 @@
 	li a7, 1
 	ecall
 	
-	li t1, -2147483647
+	auipc t0, 0
+	li t1, 2147483647
+	
+	#exemplo de overflow
+	addi t1,t1,1
+	
+	
 	
 	
